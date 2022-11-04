@@ -43,6 +43,9 @@ async function run()
         //await client.close();
     }
 }
+app.get('/',(req, res)=>{
+    res.send("Successfully")
+})
 run().catch(console.dir)
 app.listen(PORT , ()=>{
     console.log("Successfully server start at ", PORT)
