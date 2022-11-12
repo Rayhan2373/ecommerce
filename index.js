@@ -39,7 +39,7 @@ async function run()
         //await client.close();
     }
 }
-app.get('/',(req, res)=>{
+app.get('/home',(req, res)=>{
     res.send("Successfully")
 })
 run().catch(console.dir)
